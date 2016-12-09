@@ -1,0 +1,131 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:40:36', '2016-12-09 22:40:36', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:40:36', '2016-12-09 22:40:36', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "core_credit_cards"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:40:36', '2016-12-09 22:40:36', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:40:36', '2016-12-09 22:40:36', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "core_users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:40:36', '2016-12-09 22:40:36', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:40:36', '2016-12-09 22:40:36', 298486374)[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+Core::CreditCardTest: test_the_association
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-09 22:40:36.504475"], ["updated_at", "2016-12-09 22:40:36.504475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:11', '2016-12-09 22:41:11', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:11', '2016-12-09 22:41:11', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "core_credit_cards"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:11', '2016-12-09 22:41:11', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:11', '2016-12-09 22:41:11', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "core_users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:41:11', '2016-12-09 22:41:11', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:41:11', '2016-12-09 22:41:11', 298486374)[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+Core::CreditCardTest: test_the_association
+------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-09 22:41:11.556724"], ["updated_at", "2016-12-09 22:41:11.556724"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:53', '2016-12-09 22:41:53', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:53', '2016-12-09 22:41:53', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "core_credit_cards"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:53', '2016-12-09 22:41:53', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:41:53', '2016-12-09 22:41:53', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "core_users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:41:53', '2016-12-09 22:41:53', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:41:53', '2016-12-09 22:41:53', 298486374)[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+Core::CreditCardTest: test_the_association
+------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-09 22:41:53.647369"], ["updated_at", "2016-12-09 22:41:53.647369"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:43:49', '2016-12-09 22:43:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_addresses" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:43:49', '2016-12-09 22:43:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "core_credit_cards"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:43:49', '2016-12-09 22:43:49', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_credit_cards" ("core_user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:43:49', '2016-12-09 22:43:49', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "core_users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:43:49', '2016-12-09 22:43:49', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:43:49', '2016-12-09 22:43:49', 298486374)[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+Core::CreditCardTest: test_the_association
+------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-09 22:43:49.777504"], ["updated_at", "2016-12-09 22:43:49.777504"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.7ms)[0m  [1mDELETE FROM "core_addresses"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "core_addresses" ("user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:45:13', '2016-12-09 22:45:13', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "core_addresses" ("user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:45:13', '2016-12-09 22:45:13', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "core_credit_cards"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "core_credit_cards" ("user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:45:13', '2016-12-09 22:45:13', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_credit_cards" ("user_id", "created_at", "updated_at", "id") VALUES (NULL, '2016-12-09 22:45:13', '2016-12-09 22:45:13', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "core_users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:45:13', '2016-12-09 22:45:13', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at", "id") VALUES ('2016-12-09 22:45:13', '2016-12-09 22:45:13', 298486374)[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+Core::CreditCardTest: test_the_association
+------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "core_users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-09 22:45:13.618309"], ["updated_at", "2016-12-09 22:45:13.618309"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "core_credit_cards" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 980190963], ["created_at", "2016-12-09 22:45:13.634540"], ["updated_at", "2016-12-09 22:45:13.634540"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mCore::CreditCard Load (0.2ms)[0m  SELECT  "core_credit_cards".* FROM "core_credit_cards" WHERE "core_credit_cards"."user_id" = ?  ORDER BY "core_credit_cards"."id" ASC LIMIT 1  [["user_id", 980190963]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
